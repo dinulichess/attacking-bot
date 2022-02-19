@@ -28,11 +28,8 @@ engine:                      # Engine settings.
     EvalFile: nn-938525872610.nnue
     Skill Level: 20
     nodestime: 40
-    movetime: 10000
-#   go_commands:             # Additional options to pass to the UCI go command.
-#     nodes: 1               # Search so many nodes only.
-#     depth: 5               # Search depth ply only.
-#     movetime: 1000         # Integer. Search exactly movetime milliseconds.
+    go_commands:             # Additional options to pass to the UCI go command.
+      movetime: 10000         # Integer. Search exactly movetime milliseconds.
 # xboard_options:            # Arbitrary XBoard options passed to the engine.
 #   cores: "4"
 #   memory: "4096"
