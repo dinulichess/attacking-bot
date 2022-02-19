@@ -27,7 +27,8 @@ engine:                      # Engine settings.
     Use NNUE: true           # allow bot to use neural networks
     EvalFile: nn-938525872610.nnue
     Skill Level: 20
-    nodestime: 1000
+    nodestime: 40
+    movetime: 10000
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
