@@ -4,7 +4,6 @@ url: "https://lichess.org/"  # Lichess base URL.
 engine:                      # Engine settings.
   dir: "./"                  # Directory containing engines, relative to this project.
   name: "chess-engine"    # Binary name of the engine to use.
-  sfname: "chess-engine"
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
@@ -21,7 +20,7 @@ engine:                      # Engine settings.
     max_depth: 245             # half move max depth
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
-  uci_options:               # arbitrary UCI options passed to the engine
+ uci_options:               # arbitrary UCI options passed to the engine
     Move Overhead: 200       # Increase if your bot flags games too often.
     Threads: 2               # Max CPU threads the engine can use.
     Hash: 210                # Max memory (in megabytes) the engine can allocate.
@@ -48,7 +47,6 @@ abort_time: 20               # Time to abort a game in seconds when there is no 
 fake_think_time: false       # Artificially slow down the bot to pretend like it's thinking.
 rate_limiting_delay: 0       # Time (in ms) to delay after sending a move to prevent "Too Many Requests" errors.
 move_overhead: 900           # Increase if your bot flags games too often.
-
 correspondence:
     move_time: 60            # Time in seconds to search in correspondence games.
     checkin_period: 600      # How often to check for opponent moves in correspondence games after disconnecting.
@@ -84,3 +82,5 @@ challenge:                   # Incoming challenges.
   modes:                     # Game modes to accept.
     - casual                 # Unrated games.
     - rated                  # Rated games - must comment if the engine doesn't try to win.
+    
+  
