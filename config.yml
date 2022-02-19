@@ -29,7 +29,7 @@ engine:                      # Engine settings.
     Skill Level: 20
     UCI_Chess960: true
     SyzygyProbeDepth: 100
-    Syzygy50MoveRule type check : true
+    Syzygy50MoveRule : true
     SyzygyProbeLimit : 7
 #    go_commands:             # Additional options to pass to the UCI go command.
 #     movetime: 1000000         # Integer. Search exactly movetime milliseconds.
