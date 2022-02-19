@@ -1,8 +1,4 @@
-# MAINTAINERS 
-- [Kingnandi](https://lichess.org/@/Kingnandi) and [ChessGreatPlayer](https://lichess.org/@/ChessGreatPlayer)
 
-[![Python](https://github.com/LichessBot-Coders/Lichess-Coded-Bots/actions/workflows/Python.yml/badge.svg)](https://github.com/LichessBot-Coders/Lichess-Coded-Bots/actions/workflows/Python.yml)
-[![Docker](https://github.com/LichessBot-Coders/Lichess-Coded-Bots/actions/workflows/Docker.yml/badge.svg)](https://github.com/LichessBot-Coders/Lichess-Coded-Bots/actions/workflows/Docker.yml)
 # lichess-bot
 - A bridge between [Lichess API](https://lichess.org/api#tag/Bot) and bots.
 - This bot is made with Python and it is running using Docker container and is concentrated on heroku.
@@ -49,5 +45,3 @@ Note: Make sure you download a linux binary that is supported by heroku (by defa
 
 **Note: You need to use `Linux x64 for modern computers` binary for Heroku.**
 
-## Acknowledgements
-Credits to [Kingnandi](https://lichess.org/@/Kingnandi) and [ChessGreatPlayer](https://lichess.org/@/ChessGreatPlayer). They helped to collaborate and make this repository it contains codes of them and it is the best lichess repository to run bot in lichess by heroku server and a modified version of ShailChoksi.
