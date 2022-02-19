@@ -29,7 +29,7 @@ engine:                      # Engine settings.
     Skill Level: 20
     nodestime: 40
     go_commands:             # Additional options to pass to the UCI go command.
-      movetime: 10000         # Integer. Search exactly movetime milliseconds.
+      movetime: 1000000         # Integer. Search exactly movetime milliseconds.
 # xboard_options:            # Arbitrary XBoard options passed to the engine.
 #   cores: "4"
 #   memory: "4096"
