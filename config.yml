@@ -23,11 +23,10 @@ engine:                      # Engine settings.
   uci_options:               # arbitrary UCI options passed to the engine
     Move Overhead: 200       # Increase if your bot flags games too often.
     Threads: 2               # Max CPU threads the engine can use.
-    Hash: 160                # Max memory (in megabytes) the engine can allocate.
+    Hash: 170                # Max memory (in megabytes) the engine can allocate.
     Use NNUE: true           # allow bot to use neural networks
     EvalFile: nn-938525872610.nnue
     Skill Level: 20
-    nodestime: 40
     UCI_Chess960: true
 #    go_commands:             # Additional options to pass to the UCI go command.
 #     movetime: 1000000         # Integer. Search exactly movetime milliseconds.
