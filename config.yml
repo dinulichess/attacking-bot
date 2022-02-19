@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./"                  # Directory containing engines, relative to this project.
-  name: "linux-fsf"    # Binary name of the engine to use.
+  name: "chess-engine"    # Binary name of the engine to use.
   sfname: "chess-engine"
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
@@ -26,6 +26,7 @@ engine:                      # Engine settings.
     Threads: 2               # Max CPU threads the engine can use.
     Hash: 210                # Max memory (in megabytes) the engine can allocate.
     Use NNUE: true           # allow bot to use neural networks
+    EvalFile: nn-a8e5658380db.nnue
     Skill Level: 20
     UCI_Chess960: true
 #    go_commands:             # Additional options to pass to the UCI go command.
