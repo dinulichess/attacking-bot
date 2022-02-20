@@ -27,6 +27,7 @@ engine:                      # Engine settings.
     Use NNUE: true           # allow bot to use neural networks
 #   EvalFile: nn-938525872610.nnue
     Skill Level: 20
+    nodestime: 120
     UCI_Chess960: true
     SyzygyProbeDepth: 100
     Syzygy50MoveRule : true
