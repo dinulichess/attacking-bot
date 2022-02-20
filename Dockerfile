@@ -17,14 +17,14 @@ RUN rm Goi5.1.bin.7z
 RUN wget --no-check-certificate "https://gitlab.com/OIVAS7572/Cerebellum3merge.bin/-/raw/master/Cerebellum3Merge.bin.7z" -O Cerebellum3Merge.bin.7z
 Run 7z e Cerebellum3Merge.bin.7z
 RUN rm Cerebellum3Merge.bin.7z
-RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14/fairy-stockfish_x86-64-modern" -O chess-engine.zip
+RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14/fairy-stockfish_x86-64-modern" -O fairy-stockfish_x86-64-modern
 #RUN wget --no-check-certificate "https://data.stockfishchess.org/nn/nn-938525872610.nnue" -O nn-938525872610.nnue
-RUN 7z e chess-engine.zip && rm chess-engine.zip && mv stockfish* chess-engine
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
 RUN chmod +x chess-engine
 RUN chmod +x linux-fsf
+RUN chmod +x fairy-stockfish_x86-64-modern
 
 CMD python3 run.py
