@@ -31,7 +31,6 @@ engine:                      # Engine settings.
     SyzygyProbeDepth: 50
     Syzygy50MoveRule: true
     SyzygyProbeLimit: 7
-    Skill Level: 100
     UCI_ShowWDL: false
     UCI_Elo  : 2850
     UCI_Variant: true
