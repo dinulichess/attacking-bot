@@ -21,12 +21,19 @@ engine:                      # Engine settings.
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
-    Move Overhead: 200       # Increase if your bot flags games too often.
     Threads: 2               # Max CPU threads the engine can use.
     Hash: 256                # Max memory (in megabytes) the engine can allocate.
     Use NNUE: true           # allow bot to use neural networks
 #   EvalFile: nn-938525872610.nnue
     UCI_Chess960: true
+    SyzygyPath: ./engines/Syzygy_tablebase
+    SyzygyProbeDepth: 50
+    Syzygy50MoveRule: true
+    SyzygyProbeLimit: 7
+    Skill Level: 20
+    UCI_ShowWDL: false
+    UCI_Elo  : 2850
+    UCI_Variant: true
 #    go_commands:             # Additional options to pass to the UCI go command.
 #     movetime: 1000000         # Integer. Search exactly movetime milliseconds.
   xboard_options:            # Arbitrary XBoard options passed to the engine.
